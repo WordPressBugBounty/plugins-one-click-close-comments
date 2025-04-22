@@ -1,0 +1,25 @@
+.column-close_comments { width:2em; }
+.fixed .column-comments { padding-left: 8px; }
+td.column-close_comments { padding:0; vertical-align:middle; text-align:center;}
+.comment_state { cursor:pointer; text-align:center; border: 0; background-color: inherit; }
+.comment_state-disabled { cursor:inherit; }
+.comment_state-1 { color:#2ecc40; }
+.comment_state-0 { color:#ca4a1f; }
+@media screen and (max-width: 782px) {
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary~td.column-close_comments {
+		padding-bottom: 7px;
+	}
+
+	.wp-list-table .column-close_comments { text-align: left; }
+	.column-close_comments span.screen-reader-text {
+		clip: unset;
+		-webkit-clip-path: unset;
+		clip-path: unset;
+		height: initial;
+		width: initial;
+		margin: 4px 0 0;
+		font-size: 13px;
+		color: #0073aa;
+		overflow: auto;
+	}
+}
